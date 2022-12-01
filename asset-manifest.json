@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/oyunmarket/static/css/main.899db84e.css",
+    "main.js": "/oyunmarket/static/js/main.6f1867c6.js",
+    "static/media/main.jpg": "/oyunmarket/static/media/main.d8b5f4529a581a4d3d5f.jpg",
+    "static/media/cocheader.png": "/oyunmarket/static/media/cocheader.128c6e455b12755aabf5.png",
+    "static/media/brawlheader.png": "/oyunmarket/static/media/brawlheader.c65c754029d90be44561.png",
+    "static/media/fortniteheader.jpg": "/oyunmarket/static/media/fortniteheader.22d8804163608b0118e1.jpg",
+    "static/media/csgoheader.jpg": "/oyunmarket/static/media/csgoheader.b6ee0a201a96c889adc7.jpg",
+    "static/media/pubgheader.jpg": "/oyunmarket/static/media/pubgheader.5489fd988f548d90cc47.jpg",
+    "static/media/dotaheader.jpg": "/oyunmarket/static/media/dotaheader.9d54bc4ed688e177961a.jpg",
+    "index.html": "/oyunmarket/index.html",
+    "main.899db84e.css.map": "/oyunmarket/static/css/main.899db84e.css.map",
+    "main.6f1867c6.js.map": "/oyunmarket/static/js/main.6f1867c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.899db84e.css",
+    "static/js/main.6f1867c6.js"
+  ]
+}
