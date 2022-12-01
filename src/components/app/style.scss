@@ -1,0 +1,615 @@
+$color1: #e5e5e5;
+$color2: #185ADB;
+$color3: #1B2430;
+$color4: #333333;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row2{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container2{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 25px;
+}
+
+.container3{
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.mini-container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#button{
+    background-color: $color2;
+    border: none;
+    outline: none;
+    color: $color1;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background-color: lighten($color: $color2, $amount: 5);
+    }
+    span{
+        padding-right: 5px;
+    }
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%), url(img/main.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color1;
+        font-size: 50px;
+        span{
+            font-weight: 400;
+            color: $color2;
+        }
+    }
+}
+
+#section1{
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+    .logo{
+        background-color: $color1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 16.5px 19px;
+        margin-right: 15px;
+        cursor: pointer;
+        .svg-icon{
+                width: 30px;
+                height: 30px;
+                filter: invert(25%) sepia(91%) saturate(1677%) hue-rotate(206deg) brightness(99%) contrast(98%);
+            }
+    }
+    ul{
+        background-color: $color1;
+        border-radius: 10px;
+        padding: 1px 10px;
+        display: flex;
+        align-items: flex-end;
+        li{
+                list-style: none;
+                padding: 5px 15px;
+                &:hover{
+                    p{
+                        color: $color2;
+                    }
+                    .svg-icon{
+                        filter: invert(25%) sepia(91%) saturate(1677%) hue-rotate(206deg) brightness(99%) contrast(98%);
+                    }
+                }
+                a{
+                    color: $color1;
+                    text-decoration: none;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .active{
+                            filter: invert(25%) sepia(91%) saturate(1677%) hue-rotate(206deg) brightness(99%) contrast(98%);
+                        }
+                        .svg-icon{
+                            width: 33px;
+                            height: 33px;
+                        }
+                        .svg-icon2{
+                            width: 31px;
+                            height: 31px;
+                        }
+                        .svg-icon3{
+                            width: 33px;
+                            height: 33px;
+                        }
+                        .svg-icon4{
+                            width: 28px;
+                            height: 28px;
+                            padding-bottom: 5px;
+                        }
+                        p{
+                            color: #333;
+                            font-size: 14px;
+                            font-size: 12px;
+                        }
+                    }
+            }
+        }
+    }
+}
+
+#section2{
+    padding: 75px 0 75px;
+    background-color: $color3;
+    .row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .col3{
+        flex-basis: 32%;
+        margin-bottom: 50px;
+        transition: all .3s ease-in-out;
+        &:hover{
+            transform: translateY(-5px);
+        }
+        img{
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        div{
+            h3{
+                color: $color1;
+                cursor: pointer;
+            }
+            p{
+                color: $color1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/*  */
+
+#coc, #pubgm, #brawl, #dota, #csgo, #fortnite{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%), url(img/cocheader.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h1{
+        color: $color1;
+        font-size: 60px;
+    }
+    button{
+        display: inline-block;
+        
+    }
+}
+
+#pubgm{
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%), url(img/pubgheader.jpg); 
+}
+
+#brawl{
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%), url(img/brawlheader.png); 
+}
+
+#dota{
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%), url(img/dotaheader.jpg); 
+}
+
+#csgo{
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%), url(img/csgoheader.jpg); 
+}
+
+#fortnite{
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%), url(img/fortniteheader.jpg); 
+}
+
+#section3{
+    padding: 75px 0 75px;
+    background-color: $color3;
+    .row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+    }
+    .col4{
+        flex-basis: 30%;
+        border-radius: 10px;
+        background-color: $color1;
+        padding-bottom: 25px;
+        margin-bottom: 35px;
+        img{
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            height: 200px;
+        }
+        h2{
+            font-weight: 600;
+            font-size: 20px;
+        }
+        h3{
+            font-weight: 400;
+            font-size: 25px;
+            color: $color4;
+            line-height: 30px;
+        }
+        div{
+            margin-top: 10px;
+            h4{
+                font-weight: normal;
+            }
+        }
+        #button{
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    }
+}
+
+/* ADD COC */
+#section4{
+    background-color: $color3;
+    padding: 50px 0 110px;
+    a{
+        color: $color2;
+        text-decoration: none;
+    }
+    h2{
+        color: $color1;
+        font-size: 50px;
+    }
+    .form{
+        width: 100%;
+        margin-top: 25px;
+        background-color: $color1;
+        padding: 50px 0;
+        border-radius: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        .title{
+            width: 100%;
+            padding: 16px 15px;
+            font-size: 19px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-weight: 600;
+            color: $color4;
+            margin-bottom: 25px;
+        }
+        div{
+            margin-bottom: 15px;
+            .inner-input{
+                flex-basis: 47%;
+                input{
+                    display: block;
+                    width: 100%;
+                    padding: 16px 15px;
+                    margin-top: 5px;
+                    font-size: 19px;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    font-weight: 600;
+                    color: $color4;
+                }
+                select{
+                    display: block;
+                    width: 100%;
+                    padding: 16px 15px;
+                    margin-top: 5px;
+                    font-size: 19px;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    font-weight: 600;
+                    color: $color4;
+                }  
+            }
+        }
+        textarea{
+            width: 100%;
+            padding: 16px 15px;
+            font-size: 19px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-weight: 600;
+            color: $color4;
+            height: 200px;
+            resize: none;
+            margin-bottom: 15px;
+        }
+        .price{
+            flex-basis: 47%;
+            padding: 16px 15px;
+            font-size: 19px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-weight: 600;
+            color: $color4;
+        }    
+    }
+    .screenshot{
+        width: 100%;
+        margin-top: 25px;
+        background-color: $color1;
+        padding: 50px 0;
+        border-radius: 10px;
+        padding-left: 25px;
+        padding-right: 25px; 
+        h3{
+            color: $color3;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+        input{
+            flex-basis: 100%;
+            padding: 5px 10px;
+        }
+        #button{
+            margin-top: 15px;
+            display: block;
+            width: 100%;
+        }
+    }
+    .telegram{
+        width: 100%;
+        margin-top: 25px;
+        background-color: $color1;
+        padding: 50px 0;
+        border-radius: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        h3{
+            color: $color3;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+        input{
+            display: block;
+            width: 100%;
+            padding: 16px 15px;
+            margin-top: 5px;
+            font-size: 19px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-weight: 600;
+            color: $color4; 
+        }
+        p{
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    }
+    #button{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/*  */
+
+@media only screen and (max-width: 1200px){
+    .container2{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 130px;
+        padding-right: 25px;
+    }
+    #section3{
+        .col4{
+            div{
+                h4{
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #section3{
+        .col4{
+            div{
+                h4{
+                    margin-right: 0px;
+                }
+            }
+        }
+    } 
+}
+
+@media only screen and (max-width: 880px){
+    #section2{
+        .row{
+        grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    #section3{
+        .row{
+            display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 617px){
+    #section2{
+        .row{
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    #section3{
+        .row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #section3{
+        .row{
+            display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 455px){
+    #section1{
+        .logo{
+            padding: 16.5px 19px;
+            margin-right: 5px;
+        }
+        ul{
+            padding: 1px 5px;
+            li{
+                padding: 5px 10px;
+            }
+        }
+    }
+    #section4{
+        .form{
+            div{
+                .inner-input{
+                    flex-basis: 100%;
+                }
+            }
+            .price{
+                width: 100%;
+            }  
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .container2{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 110px;
+        padding-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #section1{
+        .logo{
+            padding: 15px 15px;
+            margin-right: 5px;
+            .svg-icon{
+                    width: 30px;
+                    height: 30px;
+                }
+        }
+        ul{
+                padding: 1px 5px;
+                li{
+                    padding: 5px 10px;
+                    a{
+                        div{
+                            .svg-icon{
+                                width: 31px;
+                                height: 31px;
+                                transition: all .3s ease-in-out;
+                            }
+                            .svg-icon2{
+                                width: 29px;
+                                height: 29px;
+                            }
+                            .svg-icon3{
+                                width: 31px;
+                                height: 31px;
+                            }
+                            .svg-icon4{
+                                width: 26px;
+                                height: 26px;
+                                padding-bottom: 5px;
+                            }
+                            p{
+                                color: #333;
+                                font-size: 14px;
+                                transition: all .3s ease-in-out;
+                                font-size: 10px;
+                            }
+                        }
+                }
+            }
+        }
+    }
+}

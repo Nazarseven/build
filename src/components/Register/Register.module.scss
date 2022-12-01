@@ -1,0 +1,79 @@
+$color1: #e5e5e5;
+$color2: #185ADB;
+$color3: #1B2430;
+$color4: #333333;
+
+body{
+    background-color: $color3;
+}
+
+.root{
+    background-color: $color3;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 55px;
+    padding-left: 25px;
+    padding-right: 25px;
+    h2{
+        color: $color1;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    .form{
+        background-color: $color1;
+        padding: 50px;
+        border-radius: 10px;
+        input{
+            width: 100%;
+            padding: 16px 15px;
+            font-size: 19px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-weight: 500;
+            color: $color4;
+            margin-bottom: 20px;
+            display: block;
+        }
+        button{
+            background-color: $color2;
+            border: none;
+            outline: none;
+            color: $color1;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            width: 100%;
+            margin-bottom: 10px;
+            &:hover{
+                background-color: lighten($color: $color2, $amount: 5);
+            }
+            span{
+                padding-right: 5px;
+            }
+        }
+        .a{
+            color: $color2;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .root{
+        .form{
+            padding: 50px 20px;
+        }
+    }
+}
+
+@media only screen and (max-height: 560px){
+    .root{
+        padding-top: 25px;
+    }
+}

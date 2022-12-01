@@ -1,0 +1,133 @@
+$color1: #e5e5e5;
+$color2: #185ADB;
+$color3: #1B2430;
+$color4: #333333;
+
+.miniContainer{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#button{
+    background-color: #970101c5;
+    border: none;
+    outline: none;
+    color: $color1;
+    padding: 11px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background-color: lighten($color: $color2, $amount: 5);
+    }
+    span{
+        padding-right: 5px;
+    }
+}
+
+.section3{
+    padding: 10px 0px !important;
+}
+
+.root{
+    margin: 0 auto;
+    padding: 25px;
+    padding-bottom: 125px;
+    .miniContainer{
+        h2{
+            font-size: 45px;
+            color: $color1;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h4{
+            color: $color1;
+            font-size: 30px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        p{
+            color: $color1;
+            margin-bottom: 25px;
+        }
+        button{
+            display: block;
+            margin: 10px 0;
+            font-size: 22px;
+            font-weight: 600;
+            padding: 14px 15px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .button1{
+            color: rgb(95, 160, 95);
+            display: block;
+            margin: 10px 0;
+            font-size: 22px;
+            font-weight: 600;
+            padding: 10.7px 15px;
+            border-radius: 10px;
+            width: 100%;
+            text-align: center;
+            background-color: $color1;
+        }
+        .button2{
+            color: rgb(218, 76, 76);
+        }
+        .profile{
+            background-color: $color1;
+            padding: 50px 5px;
+            border-radius: 10px;
+            h1{
+                font-size: 35px;
+                color: $color2;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 525px){
+    .root{
+        .miniContainer{
+            .profile{
+                padding: 30px 5px;
+                h1{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .root{
+        .miniContainer{
+            .profile{
+                padding: 30px 5px;
+                h1{
+                    font-size: 21px;
+                }
+            }
+            button{
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 345px){
+    .root{
+        .miniContainer{
+            .profile{
+                padding: 30px 5px;
+                h1{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
